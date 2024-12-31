@@ -1,0 +1,44 @@
+Requirement gathering
+1. Add the router to the app component
+
+2. able to create  new user by sending request to the api end point /register and after successful registeration able to navigate to the login page
+Proper form handling should be there
+1. validate form
+2. authenticate form
+3. handle different states like submit, error, loading
+
+3. able to login by sending the request to the server api end point /login for getting token and after successful logging
+i). save the token to the local storage
+ii). navigate to the /courses
+
+4. able to look into the details of the course on the provided route (/courses/:courseId)
+
+5. able to look all the courses on the route /courses if and only if there is token in the localstorage
+
+6. able to create new course by clicking add new course button and navigate to the route /courses/add
+
+7. show username if logged in on the header component
+
+8. able to logout from  the app. logging out means removing the token from the localstorage
+
+9. able to edit existing course
+
+10. able to delete the current course from the server
+
+11. if localStorage has the token already then redirected to the courses page
+
+
+
+///////////////////////////////////////////////
+
+state management
+
+get courses data from the backend on the endpoint /courses/all
+get authors data from the backend on the endpoint /authors/all
+
+save courses and author responses results to the store
+
+
+/////////////////////////////////////////////////
+
+use redux thunks for getting courses and authors
